@@ -1,1 +1,18 @@
 Enormous Input Test
+
+import sys
+
+n, k = input().split()
+n = eval(n)
+k = eval(k)
+
+inputVar = 0
+count = 0
+
+inputVar = list(map(int, sys.stdin.readlines()))
+
+for i in inputVar:
+   if i % k == 0:
+       count += 1
+
+print(count)
