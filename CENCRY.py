@@ -72,3 +72,7 @@ Key concepts:
 to mathematically iniciate the index number
 -sys.stdout.write('\n') to write the full result
 '''
+
+'''
+source guidance credit to neeraj08
+'''
