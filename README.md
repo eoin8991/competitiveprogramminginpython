@@ -11,8 +11,14 @@ list1=['Enormous Input Test',
 'Yodaness Level''
 'Back to the Future',
 'Minimum Scalar Product',
-'Minimal Coverage'.
-'Fibonacci Sum',]
+'Minimal Coverage',
+'Fibonacci Sum',
+'Fill the cisterns',
+'Egg Drop',
+'Frosting on the Cake',
+'Anagram verifier',
+'T9',
+'Spell checker']
 
 
 list2=['spoj:INTEST',
@@ -25,4 +31,10 @@ list2=['spoj:INTEST',
 'prologin:demi2012',
 'gcj:2008round1A',
 'timus:1303',
-'spoj:FIBOSUM']
+'spoj:FIBOSUM',
+'spoj:CISTFILL',
+'gcj:eggdrop',
+'icparchive:8154',
+'spoj:ANGRAM',
+'poj:1451',
+'icpcarchive:3872']
