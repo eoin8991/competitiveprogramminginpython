@@ -41,6 +41,102 @@ NO
 YES
 '''
 
+'''
+The hypermajority of solutions on spoj.com are run in C++ because people conclude that Python is too slow.
+Here is an example of a working C++ template. There's an opportunity to study solutions with a coach at 
+codementor. 
+
+#include<bits/stdc++.h>
+			using namespace std;
+			#define pb push_back
+			#define mp make_pair
+			#define nline cout<<"\n"
+			#define fast ios_base::sync_with_stdio(false),cin.tie(0)
+			#define ain(A, B, C) assert(IN(A, B, C))
+			#define ull unsigned long long int
+			#define ll long long int
+			#define pii pair<int,int>
+			#define MAXX 100009
+			#define fr(a,b,i) for(int i=a;i<b;i++)
+			vector<int>G[MAXX];
+			struct node
+			{
+				bool leaf;
+				struct node* child[10];
+				node()
+				{
+					for(int i=0;i<10;i++)child[i]=NULL;
+					leaf=false;
+				}
+			};
+			struct node* root;
+			bool add(string &s)
+			{
+				struct node* curr=root;
+				bool result = false;
+				for(int i=0;i<s.length();i++)
+				{
+					if (curr->leaf) {
+						result = true;
+					}
+					int SS=s[i]-'0';
+					if(curr->child[SS]==NULL)
+						curr->child[SS]=new node();
+					curr=curr->child[SS];
+				}
+				for(int i=0;i<10;i++)
+			   {
+			   	if(curr->child[i]!=NULL)
+			   	  return true;
+			   }
+ 
+			   if (curr->leaf || result) {
+			   	return true;
+			   }
+ 
+				curr->leaf=true;
+				return false;
+			}
+			void deleteme(node* curr)
+			{
+				for(int i=0;i<10;i++)
+				 if(curr->child[i])
+				  deleteme(curr->child[i]);
+				delete curr;
+			}
+			int main()
+			{
+				fast;
+			   int t;
+			   cin>>t;
+			   while(t--)
+			   {
+			   	root=new node();
+			   	int n,f=0;
+			   	cin>>n;
+			   	for(int i=0;i<n;i++)
+			   	{
+			   		string s;
+			   		cin>>s;
+			   		if(add(s)){f=1;}
+			   	}
+			   	if(f)
+			   	cout<<"NO"<<endl;
+			   	else
+			   	cout<<"YES"<<endl;
+			    	deleteme(root);
+			   }
+			   return 0;
+			}
+
+source guidance credit to Vamsi Sangam
+'''
+
+
+
+
+#the solution below is unfotunately too slow
+
 class Trie:
     def __init__(self):
         self.childs = [None] * 10
