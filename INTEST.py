@@ -43,7 +43,7 @@ inputVar = list(map(int, sys.stdin.readlines()))
 
 for i in inputVar:
    if i % k == 0:
-       count += 
+       count +=1 
 
 '''
 Key Concepts:
