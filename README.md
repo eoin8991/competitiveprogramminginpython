@@ -8,11 +8,21 @@ list1=['Enormous Input Test',
 'A concrete simulation',
 'Havannah',
 'Spelling Lists',
-'Yodaness Level']
+'Yodaness Level''
+'Back to the Future',
+'Minimum Scalar Product',
+'Minimal Coverage'.
+'Fibonacci Sum',]
+
+
 list2=['spoj:INTEST',
 'spoj:CENCRY',
 'spoj:PHONELST',
 'spoj:ACS',
 'gcj:2013round3B',
 'spoj:MIB',
-'spoj:YODANESS']
+'spoj:YODANESS',
+'prologin:demi2012',
+'gcj:2008round1A',
+'timus:1303',
+'spoj:FIBOSUM']
