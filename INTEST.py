@@ -50,10 +50,10 @@ Key Concepts:
 -sys.stdin() is a faster way to read input
 -eval transforms something into an integer
 -map applies a transformation to a specific input
--modolus = original input divided by first dividing
-initial number by the modulus input, then multiplying
-that result by the quotient and then subtract this result
-from the original number
+-modolus = original input divided by:
+(1) first dividing initial number by the modulus input, 
+(2) then multiplying that result by the diivsor, 
+(3) and then subtract this result from the original number
 -multiple variables separated by a comma on the left side of 
 an equation
 '''
