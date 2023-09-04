@@ -100,4 +100,6 @@ code guidance credit to marioyc
 Key Concepts:
 -Use while: True to repeat a function indefinitely until "if not" and "break"
 -use elif repeatedly, then else at the end
+-In a range, the left value in the parentheses is included, while the right
+value in the parentheses is excluded
 '''
