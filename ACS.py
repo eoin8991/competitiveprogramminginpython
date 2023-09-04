@@ -40,3 +40,64 @@ Output:
 2 2
 1 2
 '''
+
+import sys
+
+def main():
+    r = [0] * 1235
+    c = [0] * 5679
+    revr = [0] * 1235
+    revc = [0] * 5679
+
+    for i in range(1, 1235):
+        r[i] = i
+        revr[i] = i
+
+    for i in range(1, 5679):
+        c[i] = i
+        revc[i] = i
+
+    while True:
+        line = sys.stdin.readline().strip()
+        if not line:
+            break
+
+        op = line[0]
+        if op == 'R':
+            x, y = map(int, line[2:].split())
+            r1 = r[x]
+            r2 = r[y]
+            r[x] = r2
+            revr[r2] = x
+            r[y] = r1
+            revr[r1] = y
+        elif op == 'C':
+            x, y = map(int, line[2:].split())
+            c1 = c[x]
+            c2 = c[y]
+            c[x] = c2
+            revc[c2] = x
+            c[y] = c1
+            revc[c1] = y
+        elif op == 'Q':
+            x, y = map(int, line[2:].split())
+            print((r[x] - 1) * 5678 + c[y])
+        else:
+            z = int(line[2:])
+            z -= 1
+            x = z // 5678
+            y = z % 5678
+            print(revr[x + 1], revc[y + 1])
+
+if __name__ == '__main__':
+    main()
+
+'''
+code guidance credit to marioyc
+'''
+
+'''
+Key Concepts:
+-Use while: True to repeat a function indefinitely until "if not" and "break"
+-use elif repeatedly, then else at the end
+'''
