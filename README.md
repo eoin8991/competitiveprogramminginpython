@@ -22,7 +22,13 @@ list1=['Enormous Input Test',
 'Find the maximal product of string prefixes',
 'A Needle in the Haystack',
 'Power strings',
-'Period',]
+'Period',
+'Longest Common Substring',
+'Longest Palindromic Substring',
+'Casting Spells',
+'Philosophers Stone',
+'Edit distance',
+'Advanced Edit Distance']
 
 
 list2=['spoj:INTEST',
@@ -45,4 +51,10 @@ list2=['spoj:INTEST',
 'codility:carbo2013',
 'spoj:NHAY',
 'kattis:powerstrings',
-'spoj:PERIOD']
+'spoj:PERIOD',
+'spoj:LCS'.
+'spoj:LPS'
+'kattis:castingspells',
+'spoj:BYTESM2',
+'spoj:EDIST',
+'spoj:ADVEDIST']
