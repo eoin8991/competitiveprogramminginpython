@@ -18,7 +18,11 @@ list1=['Enormous Input Test',
 'Frosting on the Cake',
 'Anagram verifier',
 'T9',
-'Spell checker']
+'Spell checker',
+'Find the maximal product of string prefixes',
+'A Needle in the Haystack',
+'Power strings',
+'Period',]
 
 
 list2=['spoj:INTEST',
@@ -37,4 +41,8 @@ list2=['spoj:INTEST',
 'icparchive:8154',
 'spoj:ANGRAM',
 'poj:1451',
-'icpcarchive:3872']
+'icpcarchive:3872',
+'codility:carbo2013',
+'spoj:NHAY',
+'kattis:powerstrings',
+'spoj:PERIOD']
