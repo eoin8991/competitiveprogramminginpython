@@ -1,7 +1,7 @@
 '''
 Problem
 
-The original ICParchive 3872 frosting on the cake question has been erased from the internet for the most part.
+The original ICParchive 8154 frosting on the cake question has been erased from the internet for the most part.
 It seems to be similar to this UVA 13291 question, found here:
 https://www.udebug.com/UVa/13291
 https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=878&page=show_problem&problem=5215
