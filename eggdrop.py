@@ -109,3 +109,9 @@ eggDrop.solve()
 '''
 code development inspiration from illya-keeplearning
 '''
+
+'''
+Key Concepts:
+-creating a class by initializing it
+-assigning methods to the class
+'''
