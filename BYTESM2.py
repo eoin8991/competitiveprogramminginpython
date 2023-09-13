@@ -43,3 +43,37 @@ Output:
 
 //7+1+8+5+4+7=32
 '''
+
+def _max(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    else:
+        return c
+
+t = int(input())
+while t > 0:
+    r, c = map(int, input().split())
+    a = [[0] * (c + 2) for _ in range(r + 2)]
+    for j in range(c + 2):
+        a[0][j] = 0
+        a[r + 1][j] = 0
+    for i in range(r + 2):
+        a[i][0] = 0
+        a[i][c + 1] = 0
+    for i in range(1, r + 1):
+        for j in range(1, c + 1):
+            a[i][j] = int(input())
+    for i in range(r, 0, -1):
+        for j in range(c, 0, -1):
+            a[i][j] += _max(a[i + 1][j], a[i + 1][j - 1], a[i + 1][j + 1])
+    r = a[1][1]
+    for j in range(1, c + 1):
+        r = max(r, a[1][j])
+    print(r)
+    t -= 1
+
+'''
+code development inspiration from sukeesh
+'''
